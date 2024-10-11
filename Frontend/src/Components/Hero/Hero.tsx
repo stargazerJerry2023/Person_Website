@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="max-w-7xl mx-auto mb-40">
           <TextMotionAnimation ClassName="text-center">
             <h1 className="text-7xl md:text-9xl lg:text-[150px] font-Libre-Baskerville font-bold">Hey I'm</h1>
-            <h1 className="text-7xl md:text-9xl lg:text-[150px] font-Libre-Baskerville italic">Jerry!</h1>
+            <h1 className="text-7xl md:text-9xl lg:text-[150px] font-Libre-Baskerville italic">Jerryyyyyyyyyyyyyyyyyy!</h1>
           </TextMotionAnimation>
         </div>
       </section>
