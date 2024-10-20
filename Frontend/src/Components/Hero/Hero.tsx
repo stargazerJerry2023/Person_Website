@@ -3,7 +3,7 @@ import './Hero.css'
 
 
 const Hero = () => {
-  const [count, setCount] = useState(0)
+
 
   return (
     <div className="hero">

@@ -1,6 +1,5 @@
 // App.tsx
 import React, { useState, useEffect } from 'react';
-import ReactDOM from 'react-dom/client';
 import Hero from '../src/Components/Hero/Hero.tsx';
 import AboutMe from '../src/Components/About/AboutMe.tsx';
 import Projects from '../src/Components/Projects/Projects.tsx'

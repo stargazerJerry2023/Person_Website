@@ -33,10 +33,6 @@ const Gallery: React.FC = () => {
   ];
 
 
-  const sliderRef1 = useRef<HTMLDivElement>(null);
-  const sliderRef2 = useRef<HTMLDivElement>(null);
-  const sliderRef3 = useRef<HTMLDivElement>(null);
-  const sliderRef4 = useRef<HTMLDivElement>(null);
 
 
   const [modalIsOpen, setIsOpen] = useState<boolean>(false);
