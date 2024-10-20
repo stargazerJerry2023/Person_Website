@@ -1,17 +1,16 @@
-import TextMotionAnimation from "../Animation/Animation";
+import { useState } from 'react'
+import './Hero.css'
 
 
 const Hero = () => {
-  
-  return(
-      <section id="hero" className="w-full py-32 lg:py-[14.1rem] flex justify-center items-center text-main-color relative overflow-hidden">
-        <div className="max-w-7xl mx-auto mb-40">
-          <TextMotionAnimation ClassName="text-center">
-            <h1 className="text-7xl md:text-9xl lg:text-[150px] font-Libre-Baskerville font-bold">Hey I'm</h1>
-            <h1 className="text-7xl md:text-9xl lg:text-[150px] font-Libre-Baskerville italic">Jerryyy!</h1>
-          </TextMotionAnimation>
-        </div>
-      </section>
+  const [count, setCount] = useState(0)
+
+  return (
+    <div className="hero">
+      <h1 className = "text-teal-300 text-5xl sm:text-4xl font-mono neon-effect">Gerardo Vega </h1>
+      <h2 className = "text-teal-300 text-5xl sm:text-4xl font-mono neon-effect">Software Engineer | Full Stack Developer</h2>
+     
+    </div>
   )
 }
 

@@ -1,0 +1,172 @@
+.about-me-section {
+    background-color: var(--background-color);
+    color: var(--font-color);
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20px;
+    min-height: 100vh;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.about-me-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me-image {
+    flex: 1;
+    margin-left: 2em;
+}
+
+.about-me-image img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.about-me-content {
+    flex: 2;
+}
+
+.about-me-title {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.about-me-subtitle {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.about-me-features {
+    font-size: 1em;
+    line-height: 1.5;
+    list-style-type: disc;
+    margin-bottom: 1em;
+}
+
+.about-me-social {
+    display: flex;
+    justify-content: left;
+    margin-top: 1em;
+}
+
+.social-icon {
+    font-size: 2.5em;
+    margin:5px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out !important;
+    color: var(--primary-color)
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+#iconMail:hover {
+    color: red;
+}
+
+#iconLinkedin:hover {
+    color: red;
+}
+
+#iconGithub:hover {
+    color: red;
+}
+
+#iconInstagram:hover {
+    color: red;
+}
+
+#iconDevpost:hover {
+    color: red;
+}
+
+
+
+
+.quote {
+    margin-top: 1em;
+    padding: 10px;
+    padding-bottom: 2px;
+    background: var(--primary-color);
+    color: var(--font-color-inv);
+    text-align: center;
+    font-style: italic;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.quote::before {
+    font-size: 4em;
+    color: var(--primary-color);
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+
+.quote::after {
+
+    font-size: 4em;
+    color: var(--secondary-color);
+    position: absolute;
+    right: 10px;
+    bottom: -10px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .about-me-section {
+        margin-top:35px;
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        flex-direction: column;
+    }
+
+    .about-me-image, .about-me-content {
+        margin: 0 auto;
+        flex: 0;
+    }
+
+    .about-me-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .about-me-image img {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+    }
+
+    .about-me-title {
+        font-size: 2em;
+    }
+
+    .about-me-subtitle {
+        font-size: 1.2em;
+    }
+
+    .about-me-features {
+        font-size: 0.8em;
+    }
+
+    .social-icon {
+        font-size: 2em;
+    }
+
+    .quote::before, .quote::after {
+        font-size: 2em;
+    }
+}

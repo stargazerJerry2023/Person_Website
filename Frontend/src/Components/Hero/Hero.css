@@ -1,0 +1,74 @@
+.hero {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/discover-rgv.appspot.com/o/wp8069985.jpg?alt=media&token=d1cceb7f-043f-455a-ab53-c8b05dc2e99e');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+ 
+
+  
+  
+  
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  .neon-effect {
+    text-shadow: 0 0 3px rgba(0, 255, 204, 0.8),
+    0 0 7px rgba(0, 255, 204, 0.6), 
+    0 0 10px rgba(0, 255, 204, 0.4);
+  }
+  
+  .hero h1, .hero h2, .hero h3 {
+    opacity: 0; 
+  }
+  
+  .hero h1 {
+    font-family: var(--font-main);
+    color: whitesmoke;
+    margin-bottom: 50px;
+    font-size: 10rem !important;
+    animation: fadeIn 2s ease-out forwards;
+  }
+  
+  .hero h2 {
+    color: whitesmoke;
+    font-size: 3rem !important;
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 1s; 
+    font-family: var(--font-titles);
+  }
+  
+  .hero h3 {
+    color: whitesmoke;
+    font-size: 2rem !important;
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 2s; 
+    font-family: var(--font-titles);
+  }
+  
+  @media (max-width: 1200px) {
+    .hero h1 { font-size: 7rem !important; }
+    .hero h2 { font-size: 2rem !important; }
+    .hero h3 { font-size: 1.2rem !important; }
+  }
+  
+  @media (max-width: 800px) {
+    .hero h1 { font-size: 4rem !important; }
+    .hero h2 { font-size: 1.8rem !important; }
+    .hero h3 { font-size: 1.1rem !important; }
+  }
+  
+  @media (max-width: 500px) {
+    .hero h1 { font-size: 3rem !important; }
+    .hero h2 { font-size: 1.5rem !important; }
+    .hero h3 { font-size: 1rem !important; }
+  }

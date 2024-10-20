@@ -1,37 +1,60 @@
-import Navbar from '../src/Navbar/Navbar';
+// App.tsx
+import React, { useState, useEffect } from 'react';
+import ReactDOM from 'react-dom/client';
+import Hero from '../src/Components/Hero/Hero.tsx';
+import AboutMe from '../src/Components/About/AboutMe.tsx';
+import Projects from '../src/Components/Projects/Projects.tsx'
+import Gallery from '../src/Components/Gallery/Gallery.tsx'
+import { Link } from 'react-scroll';
+import './App.css';
+
 
 const App: React.FC = () => {
+  // State to control the display of the splash screen
+  const [showSplash, setShowSplash] = useState<boolean>(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowSplash(false);
+    }, 5000); // Change this to control the duration of the splash screen
+
+    return () => clearTimeout(timer); // Clear the timer on component unmount
+  }, []);
+
+  // State to control the navigation menu visibility
+  const [navOpen, setNavOpen] = useState<boolean>(window.innerWidth > 768);
+
   return (
-    <div className="bg-black min-h-screen text-white">
-      <Navbar />
-      <section id="home" className="p-12 text-center">
-        <h1 className="text-teal-300 text-5xl sm:text-4xl font-mono neon-effect">
-          Welcome to My Personal Website
-        </h1>
-        <p className="text-lg mt-8 text-gray-400">
-          I'm a Software Engineer who loves coding, hacking, and stargazing!
-        </p>
-      </section>
+    <React.StrictMode>
+      {!showSplash && (
+        <nav className= " ">
+          <button onClick={() => setNavOpen(!navOpen)}>&#9776;</button>
+          {navOpen && (
+            <div className="test">
+              <Link activeClass="active" to="about-me-section" spy={true} smooth={true} offset={-70} duration={500}>About Me</Link>
+              <Link activeClass="active" to="Skills-section" spy={true} smooth={true} offset={-70} duration={500} >Skills</Link>
+              <Link activeClass="active" to="projects-section" spy={true} smooth={true} offset={-70} duration={500}>Projects</Link>
+              <Link activeClass="active" to="courses-section" spy={true} smooth={true} offset={-70} duration={500}>Gallery
+</Link>
+            </div>
+          )}
+        </nav>
+      )}
+      {showSplash ? (
+        <Hero />
+      ) : (
+        <>
+          <AboutMe/>
+          <Projects />
+          <Gallery />
 
-      <section id="about" className="p-12 text-left">
-        <h2 className="text-teal-300 text-4xl font-mono neon-effect">About Me</h2>
-        <p className="text-lg mt-8 text-gray-400">
-          I'm a sophomore studying Computer Science at Boston University...
-        </p>
-      </section>
-
-      <section id="projects" className="p-12 text-left">
-        <h2 className="text-teal-300 text-4xl font-mono neon-effect">Projects</h2>
-      </section>
-
-      <section id="contact" className="p-12 text-left">
-        <h2 className="text-teal-300 text-4xl font-mono neon-effect">Contact Me</h2>
-      </section>
-    </div>
+        </>
+      )}
+    </React.StrictMode>
   );
 };
 
-export default App;
 
+export default App;
 
 
