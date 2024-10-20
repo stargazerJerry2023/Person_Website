@@ -33,20 +33,20 @@ const Gallery: React.FC = () => {
   
   ];
 
-  const ai_engineer: CourseImage[] = [
-    { src: 'https://firebasestorage.googleapis.com/v0/b/discover-rgv.appspot.com/o/Personal%2FRandom_1.jpg?alt=media&token=1549d8e3-a2ad-4c1b-8ffd-c039fcdade97', alt: 'Art of Prompt Engineering' },
-    {src: 'https://firebasestorage.googleapis.com/v0/b/discover-rgv.appspot.com/o/Personal%2FRandom_2.jpg?alt=media&token=f30799e9-1b8f-4e15-8e9a-9e4665f97e6c', alt: 'Art of Prompt Engineering 2' },
-    {src: 'https://firebasestorage.googleapis.com/v0/b/discover-rgv.appspot.com/o/Personal%2FRandom_3.JPG?alt=media&token=cbc1242d-ba7b-4f02-a41e-f619c57e0024', alt: 'Art of Prompt Engineering 3' },
-    {src: 'https://firebasestorage.googleapis.com/v0/b/discover-rgv.appspot.com/o/Personal%2FRandom_4.jpg?alt=media&token=bc3a645b-2f63-44b4-b030-906ec73f3506', alt: 'Art of Prompt Engineering 4' },
-    {src: 'https://firebasestorage.googleapis.com/v0/b/discover-rgv.appspot.com/o/Personal%2FRandom_5.JPG?alt=media&token=8d4e7713-7eac-4794-939a-0f8889791510', alt: 'Art of Prompt Engineering 5' },
-    {src: 'https://firebasestorage.googleapis.com/v0/b/discover-rgv.appspot.com/o/Personal%2FRandom_9.JPG?alt=media&token=c6361b56-faa0-4f2e-a310-b6ba136d5075', alt: 'Art of Prompt Engineering 6' },
-    {src: 'https://firebasestorage.googleapis.com/v0/b/discover-rgv.appspot.com/o/Personal%2FRandom_6.jpg?alt=media&token=ad5d9f59-03bf-44df-b501-8b38c31b5e1f', alt: 'Art of Prompt Engineering 8' },
-    {src: 'https://firebasestorage.googleapis.com/v0/b/discover-rgv.appspot.com/o/Personal%2FRandom_7.jpg?alt=media&token=3fc0cc77-e8ea-4c5c-9d8c-a43fef5f5e07', alt: 'Art of Prompt Engineering 9' },
-    {src: 'https://firebasestorage.googleapis.com/v0/b/discover-rgv.appspot.com/o/Personal%2FRandom_8.JPG?alt=media&token=ec29ed69-df7a-40e5-b1e3-fb4e7cbe4b99', alt: 'Art of Prompt Engineering 10' },
-    {src: 'https://firebasestorage.googleapis.com/v0/b/discover-rgv.appspot.com/o/Personal%2FRandom_10.JPG?alt=media&token=3e30ee3c-ac8b-4463-af96-34e3346729d4', alt: 'Art of Prompt Engineering 12' },
+  const Random: CourseImage[] = [
+    {src: 'https://firebasestorage.googleapis.com/v0/b/discover-rgv.appspot.com/o/Personal%2FRandom_1.jpg?alt=media&token=0339160f-7235-4457-a6e3-2c9607cd0def', alt: 'Art of Prompt Engineering' },
+    {src: 'https://firebasestorage.googleapis.com/v0/b/discover-rgv.appspot.com/o/Personal%2FRandom_2.jpg?alt=media&token=6a41d82e-1640-4ae7-935a-42931f4f41d4', alt: 'Art of Prompt Engineering 2' },
+    {src: 'https://firebasestorage.googleapis.com/v0/b/discover-rgv.appspot.com/o/Personal%2FRandom_3.JPG?alt=media&token=7bdaa58e-8177-4203-b160-719d327b5571', alt: 'Art of Prompt Engineering 3' },
+    {src: 'https://firebasestorage.googleapis.com/v0/b/discover-rgv.appspot.com/o/Personal%2FRandom_4.jpg?alt=media&token=374efc00-800d-452b-a679-fd0b874f9e71', alt: 'Art of Prompt Engineering 4' },
+    {src: 'https://firebasestorage.googleapis.com/v0/b/discover-rgv.appspot.com/o/Personal%2FRandom_5.JPG?alt=media&token=ec8c8bc1-e5b5-4830-9ef7-2699b0924401', alt: 'Art of Prompt Engineering 5' },
+    {src: 'https://firebasestorage.googleapis.com/v0/b/discover-rgv.appspot.com/o/Personal%2FRandom_6.jpg?alt=media&token=32413f0b-d2e2-442b-84ae-73036cdf42dd', alt: 'Art of Prompt Engineering 6' },
+    {src: 'https://firebasestorage.googleapis.com/v0/b/discover-rgv.appspot.com/o/Personal%2FRandom_7.jpg?alt=media&token=77c15c65-af4d-4223-93a4-3a664a54e29a', alt: 'Art of Prompt Engineering 8' },
+    {src: 'https://firebasestorage.googleapis.com/v0/b/discover-rgv.appspot.com/o/Personal%2FRandom_8.JPG?alt=media&token=c185708f-5960-48a6-b0cc-f602bf7beed6', alt: 'Art of Prompt Engineering 9' },
+    {src: 'https://firebasestorage.googleapis.com/v0/b/discover-rgv.appspot.com/o/Personal%2FRandom_9.JPG?alt=media&token=6afc5b75-61a8-42e5-b2bc-a66378391f4e', alt: 'Art of Prompt Engineering 10' },
+    {src: 'https://firebasestorage.googleapis.com/v0/b/discover-rgv.appspot.com/o/Personal%2FRandom_10.JPG?alt=media&token=b9c4e146-04bd-4cc1-8920-0f80dfef6107', alt: 'Art of Prompt Engineering 12' },
   ];
 
-  const full_stack_developer: CourseImage[] = [
+  const Interests: CourseImage[] = [
     { src: 'https://firebasestorage.googleapis.com/v0/b/discover-rgv.appspot.com/o/Personal%2FIntrest_1.jpg?alt=media&token=f034b77d-f708-4321-89c9-d4593c37b846', alt: 'Google Basicos Asistencia Tecnica' },
     { src: 'https://firebasestorage.googleapis.com/v0/b/discover-rgv.appspot.com/o/Personal%2FIntrest_2.jpg?alt=media&token=c8871700-2b9b-45d9-aea0-98c58e07c7f2', alt: 'Google Basicos Asistencia Tecnica 2' },
     { src: 'https://firebasestorage.googleapis.com/v0/b/discover-rgv.appspot.com/o/Personal%2FIntrest_3.jpg?alt=media&token=bc25776a-6a6b-46fc-8731-b4d2fdc32191', alt: 'Google Basicos Asistencia Tecnica 3' },
@@ -100,7 +100,7 @@ const Gallery: React.FC = () => {
       />
 
 
-      <h2>Data Science</h2>
+      <h2>College</h2>
       <Slider
         images={College}
         handleMouseEnter={handleMouseEnter}
@@ -109,9 +109,9 @@ const Gallery: React.FC = () => {
       />
 
 
-      <h2>AI Engineer</h2>
+      <h2>Random</h2>
       <Slider
-        images={ai_engineer}
+        images={Random}
         handleMouseEnter={handleMouseEnter}
         handleMouseLeave={handleMouseLeave}
         openModal={openModal}
@@ -119,7 +119,7 @@ const Gallery: React.FC = () => {
 
       <h2>Full-Stack Developer</h2>
       <Slider
-        images={full_stack_developer}
+        images={Interests}
         handleMouseEnter={handleMouseEnter}
         handleMouseLeave={handleMouseLeave}
         openModal={openModal}
