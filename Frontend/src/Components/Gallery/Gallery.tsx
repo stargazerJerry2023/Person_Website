@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Modal from 'react-modal';
 import { CourseImage } from './types';
 import Slider from './Slider';
+import './Gallery.css';
 
 Modal.setAppElement('#root');
 
@@ -88,7 +89,7 @@ const Gallery: React.FC = () => {
 
   return (
     <div className="courses-section">
-      <h1>Gallery</h1>
+      <h1 className='text-teal-300 text-5xl sm:text-4xl font-mono neon-effect'>Gallery</h1>
 
 
       <h2>Nature</h2>
@@ -117,7 +118,7 @@ const Gallery: React.FC = () => {
         openModal={openModal}
       />
 
-      <h2>Full-Stack Developer</h2>
+      <h2 >Interests</h2>
       <Slider
         images={Interests}
         handleMouseEnter={handleMouseEnter}

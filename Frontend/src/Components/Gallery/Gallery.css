@@ -12,12 +12,12 @@
   }
   
   .courses-section h2 {
-    text-align: center;
-    margin-top: 40px;
+    font-size: 2rem;
     margin-bottom: 20px;
+    text-align: center;
   }
   
-  /* Modal Styles */
+
   .modal-overlay {
     position: fixed;
     top: 0;
@@ -57,8 +57,9 @@
     right: 15px;
     background: transparent;
     border: none;
-    font-size: 2rem;
+    font-size: 4rem;
     cursor: pointer;
+    color: Red
   }
   
 
