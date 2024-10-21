@@ -1,5 +1,5 @@
 .hero {
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/discover-rgv.appspot.com/o/wp8069985.jpg?alt=media&token=d1cceb7f-043f-455a-ab53-c8b05dc2e99e');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/discover-rgv.appspot.com/o/1000_F_238024454_ySssYm4D80YOH1LLtOpOjmvkHxyoN18B.jpg?alt=media&token=756a1aab-34d8-4b3d-abd2-a26c08a8e25f');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -33,27 +33,21 @@
   
   .hero h1 {
     font-family: var(--font-main);
-    color: whitesmoke;
+    color: White;
     margin-bottom: 50px;
     font-size: 10rem !important;
     animation: fadeIn 2s ease-out forwards;
   }
   
   .hero h2 {
-    color: whitesmoke;
+    color: White;
     font-size: 3rem !important;
     animation: fadeIn 2s ease-out forwards;
     animation-delay: 1s; 
     font-family: var(--font-titles);
   }
   
-  .hero h3 {
-    color: whitesmoke;
-    font-size: 2rem !important;
-    animation: fadeIn 2s ease-out forwards;
-    animation-delay: 2s; 
-    font-family: var(--font-titles);
-  }
+
   
   @media (max-width: 1200px) {
     .hero h1 { font-size: 7rem !important; }

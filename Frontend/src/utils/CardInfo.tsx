@@ -18,7 +18,7 @@ const ProjectInfo = [
     projectImg: News_Directory,
     title: "News Directory",
     about: "News Directory is a Webpage where you can look up information on the Chronicling America database provided by the Library of Congress. You can filter results by state and LCCN. There is another table displaying members who signed up for the community and storing them in the database. This was my very first React Project and i'm very new to all these concepts. I spent alot of time researching and teaching myself how React works and what i can use it for. ",
-    technologies: ["React", "Express", "Node", "MongoDB"],
+    technologies: ["React", "Express", "Node", "MongoDB", "Heroku"],
     github: "https://github.com/stargazerJerry2023/technical-assessment",
     website: "https://technical-assessment-xwma.vercel.app/",
   },
@@ -26,7 +26,7 @@ const ProjectInfo = [
     id: "2",
     projectImg: Game_of_Life,
     title: "Game of Life",
-    about: "The Game of Life is an engaging educational project designed to enhance financial literacy among users. Through a series of interactive questions and quizzes, users can test their knowledge of personal finance, budgeting, saving, investing, and debt management. By answering questions correctly, users can earn points per every correct answer, encouraging them to learn while having fun! I worked with a team of 4 to create this project for Welcome Back Hackathon at Boston University.",
+    about: "The Game of Life is an engaging educational project designed to enhance financial literacy among users. Through a series of interactive questions and quizzes, users can test their knowledge of personal finance, budgeting, saving, investing, and debt management. By answering questions correctly, users can earn points per every correct answer, encouraging them to learn while having fun! I worked with a team of 4 to create this project for Welcome Back Hackathon 2024 at Boston University.",
     technologies: ["React", "TailwindCSS"],
     github: "https://github.com/stargazerJerry2023/GameofLife",
     website: "https://gameof-life-brown.vercel.app/",
@@ -46,8 +46,8 @@ const ProjectInfo = [
     id: "4",
     projectImg: WasteWizzards,
     title: "Waste Wizzards",
-    about: "Built a Generic Weather App that displays the current weather of a city. The app uses OpenWeather API to fetch the weather data and displays it on the screen. The app is built using Python and Streamlit. The app is deployed on Streamlit sharing. This was a fun project and one of the first projects in my coding journey. ",
-    technologies: ["OpenWeather", "python", "Streamlit"],
+    about: "We face significant challenges in identifying recyclable items due lack of knowledge about recycling  information. Where I come from and the rest of my team, our schools didn't teach us much about recycling making identification challenging even with trash cans and logos. Our innovative web application simplifies the process. Users can snap a picture of an object and the machine learning algorithm will analyze it. The program identifies the object's material, type, and provides recycling information. Created during the Welcome back Hackathon 2023",
+    technologies: ["Hugging-Face", "python", "Streamlit", "FastAI"],
     github: "https://github.com/stargazerJerry2023/WasteWizzard/tree/main",
     website: "https://wastewizard-5vsq9e6trx6pju8eexjkkz.streamlit.app/"
   }

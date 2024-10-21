@@ -1,4 +1,3 @@
-// App.tsx
 import React, { useState, useEffect } from 'react';
 import Hero from '../src/Components/Hero/Hero.tsx';
 import AboutMe from '../src/Components/About/AboutMe.tsx';
@@ -9,18 +8,15 @@ import './App.css';
 
 
 const App: React.FC = () => {
-  // State to control the display of the splash screen
   const [showSplash, setShowSplash] = useState<boolean>(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowSplash(false);
-    }, 5000); // Change this to control the duration of the splash screen
-
-    return () => clearTimeout(timer); // Clear the timer on component unmount
+    }, 5000); 
+    return () => clearTimeout(timer); 
   }, []);
 
-  // State to control the navigation menu visibility
   const [navOpen, setNavOpen] = useState<boolean>(window.innerWidth > 768);
 
   return (

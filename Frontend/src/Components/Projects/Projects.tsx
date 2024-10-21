@@ -15,7 +15,7 @@ const Projects = () => {
       <div className="w-full max-w-7xl mx-auto">
         <div className="text-center mb-10 mx-5">
         <SectionAnimations>
-            <h1 className="font-League-Spartan text-5xl sm:text-9xl font-bold">PROJECTS</h1>
+            <h1 className="font-League-Spartan text-5xl sm:text-9xl font-mono neon-effect">PROJECTS</h1>
             </SectionAnimations>
         </div>
         <Grid>
