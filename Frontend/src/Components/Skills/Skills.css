@@ -1,0 +1,123 @@
+
+.Skills-section {
+    background-color: var(--background-color);
+    color: var(--font-color);
+    padding: 20px 10%;
+}
+
+.Skills-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.top-skills,
+.bottom-skills {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    flex: 1 1 250px;
+    padding: 20px;
+    border: 2px dashed var(--primary-color);
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    background-color: black;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skill h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.skill h3 svg {
+    margin-right: 10px;
+}
+
+.skill p {
+    flex-grow: 1;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+
+.software-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skill-type-icon {
+    color: var(--primary-color);
+}
+
+
+@media screen and (max-width: 992px) {
+    .top-skills,
+    .bottom-skills {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top-skills,
+    .bottom-skills {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .skill {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .Skills-section {
+        padding: 20px 5%;
+    }
+
+    .Skills-section h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .skill h3 {
+        font-size: 1.25rem;
+    }
+
+    .skill p {
+        font-size: 0.95rem;
+    }
+}

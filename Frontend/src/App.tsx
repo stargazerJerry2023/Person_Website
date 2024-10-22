@@ -3,6 +3,7 @@ import Hero from '../src/Components/Hero/Hero.tsx';
 import AboutMe from '../src/Components/About/AboutMe.tsx';
 import Projects from '../src/Components/Projects/Projects.tsx'
 import Gallery from '../src/Components/Gallery/Gallery.tsx'
+import Skills from '../src/Components/Skills/Skills.tsx'
 import { Link } from 'react-scroll';
 import './App.css';
 
@@ -40,8 +41,10 @@ const App: React.FC = () => {
       ) : (
         <>
           <AboutMe/>
+          <Skills />
           <Projects />
           <Gallery />
+          
 
         </>
       )}
