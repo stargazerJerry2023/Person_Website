@@ -1,4 +1,4 @@
-import React, { useState, ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 
 import * as Icons from '../Skills/SkillsIcon';
 import './Skills.css';
