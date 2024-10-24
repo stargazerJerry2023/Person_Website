@@ -16,7 +16,7 @@ const AboutMe: React.FC = () => {
       <div className="about-me-content">
         <h1 className="about-me-title text-teal-300 text-5xl sm:text-4xl font-mono neon-effect">Hi, I'm Gerardo Vega</h1>
         <h2 className="about-me-subtitle">
-        I'm a Hispanic First Generation Sophomore at Boston University Studying Computer Science Full-Stack Development.
+        I'm a Hispanic First Generation Sophomore at Boston University Studying Computer Science.
         </h2>
         <h2 className="about-me-subtitle">
           Passionate about making an impact through technology, and continuous self-taught learning.
