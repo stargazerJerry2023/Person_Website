@@ -14,7 +14,7 @@ const App: React.FC = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowSplash(false);
-    }, 5000); 
+    }, 6500); 
     return () => clearTimeout(timer); 
   }, []);
 

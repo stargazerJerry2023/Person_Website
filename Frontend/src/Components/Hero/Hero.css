@@ -66,3 +66,132 @@
     .hero h2 { font-size: 1.5rem !important; }
     .hero h3 { font-size: 1rem !important; }
   }
+
+.terminal-container {
+  background-color: #1a1a1a;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Courier New', monospace;
+}
+
+.terminal {
+  background-color: #2b2b2b;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 6px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.terminal-header {
+  background-color: #3c3c3c;
+  padding: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.terminal-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.terminal-button.red { background-color: #ff5f56; }
+.terminal-button.yellow { background-color: #ffbd2e; }
+.terminal-button.green { background-color: #27c93f; }
+
+.terminal-content {
+  padding: 20px;
+  color: #fff;
+  min-height: 300px;
+}
+
+.command-line {
+  margin-bottom: 15px;
+  opacity: 0;
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.prompt {
+  color: #0f0;
+  margin-right: 8px;
+}
+
+.command {
+  color: #fff;
+}
+
+.password {
+  color: #fff;
+  animation: blink 1s step-end infinite;
+}
+
+.welcome-message {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.access-granted {
+  color: #0f0;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+.welcome-text {
+  font-size: 2.5em;
+  color: #0f0;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: slideIn 0.5s ease-out 0.3s forwards;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  color: #0f0;
+  opacity: 0;
+  animation: slideIn 0.5s ease-out 0.6s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .terminal {
+    width: 95%;
+  }
+  
+  .welcome-text {
+    font-size: 1.8em;
+  }
+  
+  .subtitle {
+    font-size: 1em;
+  }
+}
+
+.command::after {
+  content: '|';
+  animation: blink 1s step-end infinite;
+}
