@@ -28,11 +28,11 @@ const experiences: ExperienceItem[] = [
     companyLogo: "https://firebasestorage.googleapis.com/v0/b/discover-rgv.appspot.com/o/Latin_Logo.webp?alt=media&token=147e3440-786b-4936-94c7-c3a218a0a2d0",
     period: "Aug 2024 - Present",
     description: [
-      "Led development of key features using React and TypeScript",
-      "Improved application performance by 40%",
-      "Collaborated with cross-functional teams on major projects"
+      "Implemented an authentication system using Auth0 to ensure user login security and protect routes preventing unauthorized access",
+      "Developed a reusable custom AuthProvider component in React to manage authentication state across the Membership Portal, reducing authentication-related code redundancy by 25% and improving maintainability.",
+      "Implemented a custom sign-up page using Rails controllers and views, created secure API endpoints for user registration and login, integrated Auth0 for email/password authentication and used bcrypt to encrypt passwords."
     ],
-    technologies: ["React", "TypeScript", "Node.js", "AWS"]
+    technologies: ["React", "Rails", "Node.js", "AWS", "Auth0", "SQL"]
   },
   // Add more experiences here
 ];
