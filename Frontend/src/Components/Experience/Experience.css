@@ -1,0 +1,231 @@
+.experience-section {
+  padding: 4rem 2rem;
+  background-color: #000000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  color: #00ffcc;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-weight: 600;
+  text-shadow: 0 0 3px rgba(0, 255, 204, 0.8),
+               0 0 7px rgba(0, 255, 204, 0.6),
+               0 0 10px rgba(0, 255, 204, 0.4);
+}
+
+.timeline-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: #00ffcc;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+  box-shadow: 0 0 8px rgba(0, 255, 204, 0.5);
+}
+
+.timeline-item {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.timeline-item.left {
+  left: 0;
+}
+
+.timeline-item.right {
+  left: 50%;
+}
+
+.timeline-content {
+  padding: 20px;
+  background: rgba(0, 255, 204, 0.05);
+  border: 1px solid rgba(0, 255, 204, 0.2);
+  border-radius: 8px;
+  position: relative;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 255, 204, 0.1);
+}
+
+.timeline-content::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #00ffcc;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 8px rgba(0, 255, 204, 0.5);
+}
+
+.left .timeline-content::after {
+  right: -50px;
+}
+
+.right .timeline-content::after {
+  left: -50px;
+}
+
+.timeline-date {
+  color: #00ffcc;
+  font-size: 1.0rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.timeline-title {
+  color: #00ffcc;
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+  text-align: center;
+  font-weight: bold;
+   text-shadow: 0 0 3px rgba(0, 255, 204, 0.8),
+               0 0 7px rgba(0, 255, 204, 0.6),
+               0 0 10px rgba(0, 255, 204, 0.4);
+}
+
+.timeline-company {
+  color: #00ffcc;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+
+}
+
+.timeline-description {
+  color: var(--font-color);
+  margin: 1rem 0;
+  padding-left: 1.2rem;
+}
+
+.timeline-description li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.timeline-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tech-tag {
+  background: rgba(0, 255, 204, 0.1);
+  color: #00ffcc;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  border: 1px solid rgba(0, 255, 204, 0.3);
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+  background: rgba(0, 255, 204, 0.2);
+  transform: translateY(-2px);
+}
+
+.timeline-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.company-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.title-company {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.company-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 8px;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 255, 204, 0.2);
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.1);
+  transition: all 0.3s ease;
+  align-self: center;
+}
+
+.company-logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .timeline-container::after {
+    left: 31px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .timeline-item.right {
+    left: 0;
+  }
+
+  .timeline-content::after {
+    left: -39px !important;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .timeline-title {
+    font-size: 1.2rem;
+  }
+
+  .timeline-company {
+    font-size: 1rem;
+  }
+
+  .title-with-logo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .company-logo {
+    width: 50px;
+    height: 50px;
+    padding: 6px;
+  }
+} 

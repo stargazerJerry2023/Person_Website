@@ -4,6 +4,7 @@ import AboutMe from '../src/Components/About/AboutMe.tsx';
 import Projects from '../src/Components/Projects/Projects.tsx'
 import Gallery from '../src/Components/Gallery/Gallery.tsx'
 import Skills from '../src/Components/Skills/Skills.tsx'
+import Experience from '../src/Components/Experience/Experience.tsx'
 import { Link } from 'react-scroll';
 import './App.css';
 
@@ -29,6 +30,7 @@ const App: React.FC = () => {
             <div className="test">
               <Link activeClass="active" to="about-me-section" spy={true} smooth={true} offset={-70} duration={500}>About Me</Link>
               <Link activeClass="active" to="Skills-section" spy={true} smooth={true} offset={-70} duration={500} >Skills</Link>
+              <Link activeClass="active" to="experience-section" spy={true} smooth={true} offset={-70} duration={500}>Experience</Link>
               <Link activeClass="active" to="projects-section" spy={true} smooth={true} offset={-70} duration={500}>Projects</Link>
               <Link activeClass="active" to="courses-section" spy={true} smooth={true} offset={-70} duration={500}>Gallery
 </Link>
@@ -42,9 +44,10 @@ const App: React.FC = () => {
         <>
           <AboutMe/>
           <Skills />
+           <Experience />
           <Projects />
           <Gallery />
-          
+         
 
         </>
       )}
